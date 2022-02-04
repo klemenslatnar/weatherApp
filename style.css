@@ -1,0 +1,76 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  font-family: Merriweather, sans-serif;
+}
+
+body {
+  background: "grey";
+}
+
+.container {
+  height: 100vh;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.weatherImage {
+  width: 5rem;
+}
+
+.weatherMain {
+  font-size: 1.5rem;
+}
+
+.sunny {
+  background: rgb(2, 0, 36);
+  background: linear-gradient(
+    90deg,
+    rgba(2, 0, 36, 1) 0%,
+    rgba(0, 29, 251, 1) 0%,
+    rgba(0, 212, 255, 1) 100%
+  );
+}
+
+.rainy {
+  background: rgb(2, 0, 36);
+  background: linear-gradient(
+    90deg,
+    rgba(2, 0, 36, 1) 0%,
+    rgba(0, 29, 251, 1) 0%,
+    rgba(0, 177, 252, 1) 50%,
+    rgba(0, 58, 255, 1) 100%
+  );
+}
+
+.snowy {
+  background: rgb(117, 117, 117);
+  background: linear-gradient(
+    128deg,
+    rgba(117, 117, 117, 1) 0%,
+    rgba(255, 255, 255, 1) 100%
+  );
+}
+
+.thunderstorm {
+  background: rgb(117, 117, 117);
+  background: linear-gradient(
+    128deg,
+    rgba(117, 117, 117, 1) 0%,
+    rgba(24, 24, 24, 1) 100%
+  );
+}
+
+.cloudy {
+  background: rgb(117, 117, 117);
+  background: radial-gradient(
+    circle,
+    rgba(117, 117, 117, 1) 0%,
+    rgba(179, 176, 176, 1) 100%
+  );
+}
